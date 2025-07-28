@@ -9,8 +9,8 @@ description = "Offline AI-Powered Job Application Agent for Java Backend Develop
 authors = [
     {name = "Developer", email = "developer@example.com"},
 ]
-license = {text = "Private Use Only"}
-readme = "README.md"
+license = "LicenseRef-Private"
+readme = {file = "README.md", content-type = "text/markdown; charset=UTF-8"}
 requires-python = ">=3.8"
 classifiers = [
     "Development Status :: 4 - Beta",

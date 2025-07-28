@@ -1,0 +1,37 @@
+<!-- electron-frontend/renderer/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Offline AI Job Agent Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🧠 Job Agent Dashboard</h1>
+  </header>
+
+  <section id="stats">
+    <div class="stat-box">Jobs Found: <span id="jobs-found">0</span></div>
+    <div class="stat-box">Applications Sent: <span id="apps-sent">0</span></div>
+    <div class="stat-box">Total Jobs: <span id="total-jobs">0</span></div>
+    <div class="stat-box">Total Applications: <span id="total-apps">0</span></div>
+  </section>
+
+  <section id="charts">
+    <canvas id="applications-chart"></canvas>
+  </section>
+
+  <section id="logs">
+    <h2>📜 Logs</h2>
+    <pre id="log-output"></pre>
+  </section>
+
+  <section id="controls">
+    <button id="start-agent">▶️ Start Agent</button>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
